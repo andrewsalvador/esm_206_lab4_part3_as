@@ -25,3 +25,5 @@ ggplot(db_subset, aes(x = year,
                       y = deaths_per_100k)) +
   geom_line(aes(color = country_name))
 
+ggsave(here("final_graphs", "disease_graph.png"))
+
